@@ -1,6 +1,36 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-
-
-<router-outlet />
+<div class="bg-black">
+  <div class="flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8 bg-black">
+    <div class="bg-white p-8 sm:p-10 lg:p-12 rounded-md w-full max-w-sm sm:max-w-md lg:max-w-lg">
+      <h2 class="text-3xl font-semibold mb-8">Sign In</h2>
+      <form class="space-y-6">
+        <div>
+          <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Email</mat-label>
+            <input matInput type="email"  name="email" required>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="fill" class="w-full">
+            <mat-label>Password</mat-label>
+            <input matInput type="password"  name="password" required>
+          </mat-form-field>
+        </div>
+        <button mat-raised-button color="primary" class="w-full py-3">Sign In</button>
+        <div class="flex items-center justify-between mt-4">
+          <div class="flex items-center">
+            <mat-checkbox name="rememberMe" color="primary" >Remember me</mat-checkbox>
+          </div>
+          <div>
+            <a href="#" class="text-sm text-gray-400 hover:underline">Need help?</a>
+          </div>
+        </div>
+      </form>
+      <!-- <p class="mt-8 text-gray-400">
+        New to Netflix? <a href="#" class="text-white hover:underline">Sign up now.</a>
+      </p>
+      <p class="mt-2 text-xs text-gray-400">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" class="text-gray-400 hover:underline">Learn more.</a>
+      </p> -->
+    </div>
+  </div>
+</div>
